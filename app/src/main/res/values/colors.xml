@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rose_background">#F8E5ED</color>
+    <color name="rose_light">#FCEFF4</color>
+    <color name="rose_primary">#C56A91</color>
+    <color name="rose_dark">#A94773</color>
+    <color name="white">#FFFFFF</color>
+    <color name="text_dark">#49313D</color>
+    <color name="text_gray">#8B7B83</color>
+    <color name="green_call">#4CAF50</color>
+    <color name="yellow_favorite">#FFC107</color>
+    <color name="red_delete">#E53935</color>
+</resources>

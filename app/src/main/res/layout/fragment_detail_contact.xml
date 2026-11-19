@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF3F7"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <!-- Photo -->
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="7dp"
+            android:background="#F5DCE7"
+            android:scaleType="centerCrop"
+            android:contentDescription="Photo du contact" />
+
+        <!-- Galerie et Caméra -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btnGalerie"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#C65D8B"
+                android:text="Galerie"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnCamera"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#C65D8B"
+                android:text="Caméra"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Informations -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Informations du contact"
+            android:textColor="#A94773"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/etNom"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="10dp"
+            android:backgroundTint="#C65D8B"
+            android:hint="Nom"
+            android:textSize="14sp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etPrenom"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="10dp"
+            android:backgroundTint="#C65D8B"
+            android:hint="Prénom"
+            android:textSize="14sp"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etTelephone"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="10dp"
+            android:backgroundTint="#C65D8B"
+            android:hint="Téléphone"
+            android:textSize="14sp"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="9dp"
+            android:paddingHorizontal="10dp"
+            android:backgroundTint="#C65D8B"
+            android:hint="E-mail"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Localisation GPS -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Localisation GPS"
+            android:textColor="#A94773"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+        <EditText
+            android:id="@+id/etLatitude"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="5dp"
+            android:paddingHorizontal="10dp"
+            android:backgroundTint="#C65D8B"
+            android:hint="Latitude"
+            android:textSize="14sp"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/etLongitude"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="9dp"
+            android:paddingHorizontal="10dp"
+            android:backgroundTint="#C65D8B"
+            android:hint="Longitude"
+            android:textSize="14sp"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <!-- Actions -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Actions"
+            android:textColor="#A94773"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAppeler"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#C65D8B"
+                android:text="Appeler"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnEmail"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="4dp"
+                android:backgroundTint="#C65D8B"
+                android:text="E-mail"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnCarte"
+                android:layout_width="0dp"
+                android:layout_height="39dp"
+                android:layout_weight="1"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="#C65D8B"
+                android:text="Carte"
+                android:textSize="11sp"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Enregistrer et Annuler -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnEnregistrer"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="5dp"
+                android:backgroundTint="#C65D8B"
+                android:text="Enregistrer"
+                android:textSize="12sp"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnAnnuler"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginStart="5dp"
+                android:backgroundTint="#EBD5DF"
+                android:text="Annuler"
+                android:textSize="12sp"
+                android:textColor="#49313D" />
+        </LinearLayout>
+
+        <!-- Supprimer -->
+        <Button
+            android:id="@+id/btnSupprimer"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#D9536F"
+            android:text="Supprimer"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>

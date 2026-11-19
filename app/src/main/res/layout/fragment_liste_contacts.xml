@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_contacts">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Recherche compacte -->
+        <EditText
+            android:id="@+id/etFiltre"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/bg_recherche"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="6dp"
+            android:hint="Rechercher un contact..."
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="#49313D"
+            android:textColorHint="#A58D98"
+            android:textSize="12sp" />
+
+        <!-- Message liste vide -->
+        <TextView
+            android:id="@+id/tvVide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Aucun contact"
+            android:textColor="#8B7B83"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <!-- Liste des contacts -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="4dp" />
+
+        <!-- Menu inférieur -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#FFFFFF"
+            android:elevation="8dp"
+            app:itemIconTint="#C65D8B"
+            app:itemTextColor="#C65D8B"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_bottom" />
+    </LinearLayout>
+
+    <!-- Bouton Ajouter compact -->
+
+    <ImageButton
+        android:id="@+id/btnAjouter"
+        android:layout_width="65dp"
+        android:layout_height="61dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/bg_add_button"
+        android:backgroundTint="#C65D8B"
+        android:contentDescription="Ajouter un contact"
+        android:elevation="12dp"
+        android:padding="12dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_add"
+        android:tint="#FFFFFF"
+        android:visibility="visible" />
+
+
+</FrameLayout>
